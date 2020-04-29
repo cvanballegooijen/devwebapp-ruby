@@ -3,9 +3,10 @@
 
 Extended version of [burtlo/devwebapp-ruby:k8s](https://hub.docker.com/r/burtlo/devwebapp-ruby)
 
-The web app used to [demo](https://learn.hashicorp.com/vault/getting-started-k8s/external-vault) the k8s agent injector of Hashicorp Vault. This demo is based on a Vault server in `dev` mode.
+The web app used to demo consuming secrets from Hashicorp Vault. The image of `burtlo` is based on a Vault server in `dev` mode.
+For example in this [demo](https://learn.hashicorp.com/vault/getting-started-k8s/external-vault).
 
-By making the VAULT_TOKEN variable, the webapp can be used for a demo with a Vault server in `dev`, `standalone` or `ha` mode.
+This `dirc/devwebapp-ruby` image is an extension. By making the VAULT_TOKEN variable, the webapp can be used for a demo with a Vault server in `dev`, `standalone` or `ha` mode.
 
 ## Usage
 
