@@ -1,5 +1,7 @@
 
-# Extended version of [burtlo/devwebapp-ruby:k8s](https://hub.docker.com/r/burtlo/devwebapp-ruby)
+# devwebapp-ruby
+
+Extended version of [burtlo/devwebapp-ruby:k8s](https://hub.docker.com/r/burtlo/devwebapp-ruby)
 
 The web app used to [demo](https://learn.hashicorp.com/vault/getting-started-k8s/external-vault) the k8s agent injector of Hashicorp Vault. This demo is based on a Vault server in `dev` mode.
 
