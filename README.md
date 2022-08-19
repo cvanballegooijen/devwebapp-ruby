@@ -15,8 +15,9 @@ This `dirc/devwebapp-ruby` image is an extension. By making the VAULT_TOKEN vari
 EXTERNAL_VAULT_ADDR=13.66.89.3
 VAULT_ADDR=http://$EXTERNAL_VAULT_ADDR:8200
 VAULT_TOKEN=s.Om1eJ8grxKInfsocu29XrE5G
+VAULT_NAMESPACE=admin
 
-docker run -d --name devwebapp --rm -e VAULT_ADDR=$VAULT_ADDR -e VAULT_TOKEN=$VAULT_TOKEN -p 8080:8080 dirc/devwebapp-ruby:latest
+docker run -d --name devwebapp --rm -e VAULT_ADDR=$VAULT_ADDR -e VAULT_TOKEN=$VAULT_TOKEN -e VAULT_NAMESPACE=admin -p 8080:8080 dirc/devwebapp-ruby:latest
 
 docker exec -it devwebapp curl -s localhost:8080
 
