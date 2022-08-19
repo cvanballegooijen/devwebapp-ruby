@@ -35,9 +35,9 @@ spec:
       - name: VAULT_ADDR
         value: "http://$EXTERNAL_VAULT_ADDR:8200"
       - name: VAULT_TOKEN
-        value: root
+        value: "root"
       - name: VAULT_NAMESPACE
-        value: admin
+        value: "admin"
 EOF
 ```
 
