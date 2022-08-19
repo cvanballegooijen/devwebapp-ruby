@@ -55,15 +55,3 @@ docker run -d --name devwebapp --rm -e VAULT_ADDR=$VAULT_ADDR -e VAULT_TOKEN=$VA
 docker exec -it devwebapp curl -s localhost:8080
 
 ```
-
-## Build
-
-```shell
-TAG=2.3
-docker build -t dirc/devwebapp-ruby:$TAG .
-docker build -t dirc/devwebapp-ruby:latest .
-
-docker push dirc/devwebapp-ruby:$TAG
-docker push dirc/devwebapp-ruby:latest
-
-```
