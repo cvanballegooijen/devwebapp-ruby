@@ -30,7 +30,7 @@ spec:
   serviceAccountName: internal-app
   containers:
     - name: app
-      image: cvanballegooijen/devwebapp-ruby:k8s
+      image: cvanballegooijen/devwebapp-ruby:latest
       env:
       - name: VAULT_ADDR
         value: "http://$EXTERNAL_VAULT_ADDR:8200"
