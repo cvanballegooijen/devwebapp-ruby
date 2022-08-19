@@ -12,8 +12,8 @@ This `dirc/devwebapp-ruby` image is an extension. By making the VAULT_TOKEN vari
 Follow the instructions documented here:
 [Integrate a Kubernetes Cluster with an External Vault Server](https://developer.hashicorp.com/vault/tutorials/kubernetes/kubernetes-external-vault?optInFrom=learn)
 
-
-Note: We need to add the X-Vault-Namespace header to be able to get secrets from HashiCorp Vault Enterprise or HCP Vault.
+> **Note**
+> We need to add the X-Vault-Namespace header to be able to get secrets from HashiCorp Vault Enterprise or HCP Vault.
 
 Change the following in step "Deploy application with hard-coded Vault address" from the instructions mentioned above.
 
