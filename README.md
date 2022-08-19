@@ -1,7 +1,7 @@
 
 # devwebapp-ruby
 
-Extended version of [burtlo/devwebapp-ruby:k8s](https://hub.docker.com/r/burtlo/devwebapp-ruby)
+[cvanballegooijen/devwebapp-ruby:latest](https://hub.docker.com/r/cvanballegooijen/devwebapp-ruby) is an extended version of [burtlo/devwebapp-ruby:k8s](https://hub.docker.com/r/burtlo/devwebapp-ruby)
 
 The web app used to demo consuming secrets from Hashicorp Vault. The image of `burtlo` is based on a Vault server in `dev` mode.
 For example in this [demo](https://learn.hashicorp.com/vault/getting-started-k8s/external-vault).
