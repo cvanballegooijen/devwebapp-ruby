@@ -9,15 +9,15 @@ For example in this [demo](https://learn.hashicorp.com/vault/getting-started-k8s
 This `dirc/devwebapp-ruby` image is an extension. By making the VAULT_TOKEN variable, the webapp can be used for a demo with a Vault server in `dev`, `standalone` or `ha` mode.
 
 ## Prerequisites
-Follow the instructions documented header
+Follow the instructions documented here:
 [Integrate a Kubernetes Cluster with an External Vault Server](https://developer.hashicorp.com/vault/tutorials/kubernetes/kubernetes-external-vault?optInFrom=learn)
 
 
 Note: We need to add the X-Vault-Namespace header to be able to get secrets from HashiCorp Vault Enterprise or HCP Vault.
 
-Change the following step from the instructions mentioned above.
+Change the following in step "Deploy application with hard-coded Vault address" from the instructions mentioned above.
 
-``` shell
+```shell
 
 cat > devwebapp.yaml <<EOF
 apiVersion: v1
