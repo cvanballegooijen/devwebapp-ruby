@@ -17,6 +17,7 @@ class ExampleApp < Sinatra::Base
 
     set :vault_url, ENV["VAULT_ADDR"] || "http://localhost:8200"
     set :vault_token, ENV["VAULT_TOKEN"] || "root"
+    set :vault_namespace, ENV["VAULT_NAMESPACE"] || "admin"
   end
 
   configure :production do
@@ -24,6 +25,7 @@ class ExampleApp < Sinatra::Base
     logger.level = Logger::INFO
     set :vault_url, ENV["VAULT_ADDR"] || "http://vault:8200"
     set :vault_token, ENV["VAULT_TOKEN"] || "root"
+    set :vault_namespace, ENV["VAULT_NAMESPACE"] || "admin"
   end
 
   # GET "/"
@@ -39,6 +41,7 @@ class ExampleApp < Sinatra::Base
     vault_response = Faraday.get "#{settings.vault_url}/v1/#{secrets_path}" do |req|
       req.headers['Content-Type'] = 'application/json'
       req.headers['X-Vault-Token'] = settings.vault_token
+      req.headers['X-Vault-Namespace'] = settings.vault_namespace
     end
 
     if vault_response.status != 200
